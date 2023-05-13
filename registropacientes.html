@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacientes centros Medico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<h1>FORMULARIO DE REGISTRO DE PACIENTES</h1>
+<body>
+    <form id="formulariop">
+        <label for="name">Nombre del paciente<span> *</span></label>
+        <input type="text" id="name" placeholder="Ingrese Nombre" required>
+        <br>
+        <br>
+        <label for="apelli">Apellido del paciente<span> *</span></label>
+        <input type="text" id="apelli" placeholder="Ingrese apellido" required>
+        <br>
+        <br>
+        <label for="cedula">cedula del paciente<span> *</span></label>
+        <input type="number" id="cedula" placeholder="Numero de cedula" required>
+        <br>
+        <br>
+        <select name="especialidad" id="especialidad">
+            <option value="">------------------------  Seleccione la especialidad requerida ---------------------</option>
+            <option>Medicina general</option>
+            <OPtion>Cardiología</OPtion>
+            <option>Medicina interna</option>
+            <option>Dermatología</option>
+            <option>Rehabilitación física</option>
+            <option>Radiología</option>
+            <option>Psicología</option>
+            <option>Odontología</option>
+        </select>
+        <br>
+        <br>
+        <label for="Edad">Edad del paciente<span> *</span></label>
+        <input type="number" id="edad" placeholder="edad" required>
+        <br>
+        <br>
+        <label for="telefono">Telefono de contacto:<span> *</span></label>
+        <input type="number" id="telefono" name="telefono" required>
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    <div class="boton-container">
+        <input type="button" id="botonVolver" value="Volver">
+    </div>
+    <script src="registropacientes.js"></script>
+    <script src="volver.js"></script>
+</body>
+</html>

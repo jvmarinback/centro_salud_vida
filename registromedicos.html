@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicos centros Medico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<h1>FORMULARIO DE REGISTRO MEDICOS</h1>
+<body>
+    <form id="formulario">
+        <label for="name">Nombre del medico<span> *</span></label>
+        <input type="text" id="name" placeholder="Ingrese Nombre" required>
+        <br>
+        <br>
+        <label for="apelli">Apellido del medico<span> *</span></label>
+        <input type="text" id="apelli" placeholder="Ingrese apellido" required>
+        <br>
+        <br>
+        <label for="cedula">cedula del medico<span> *</span></label>
+        <input type="number" id="cedula" placeholder="Numero de cedula" required>
+        <br>
+        <br>
+        <select name="especialidad" id="especialidad">
+            <option value="">------------------------  Seleccione la especialidad  ---------------------</option>
+            <option>Medicina general</option>
+            <OPtion>Cardiología</OPtion>
+            <option>Medicina interna</option>
+            <option>Dermatología</option>
+            <option>Rehabilitación física</option>
+            <option>Radiología</option>
+            <option>Psicología</option>
+            <option>Odontología</option>
+        </select>
+        <br>
+        <br>
+        <label for="consultorio">Consultorio<span> *</span></label>
+        <input type="number" id="consultorio" placeholder="consultorio" required>
+        <br>
+        <br>
+        <label for="correo">Correo de contacto:<span> *</span></label>
+        <input type="email" id="correo" name="correo" required>
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    <div class="boton-container">
+        <input type="button" id="botonVolver" value="Volver">
+    </div>
+    <script src="registromedicos.js"></script>
+    <script src="volver.js"></script>
+</body>
+</html>
